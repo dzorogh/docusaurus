@@ -75,12 +75,16 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Oryx BMS',
+      title: 'Документация Oryx BMS',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       items: [
+        {
+          href: 'https://oryxbms.ru',
+          label: 'Oryx BMS',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -89,7 +93,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/dzorogh/docusaurus',
           label: 'GitHub',
           position: 'right',
         },
