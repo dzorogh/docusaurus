@@ -2,46 +2,48 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# RU
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# Введение в туториал
 
-## Getting Started
+Давайте познакомимся с **Docusaurus меньше чем за 5 минут**.
 
-Get started by **creating a new site**.
+## Начало работы
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Начните с **создания нового сайта**.
 
-### What you'll need
+Или **попробуйте Docusaurus сразу** на **[docusaurus.new](https://docusaurus.new)**.
+
+### Что понадобится
 
 - [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+  - При установке Node.js рекомендуется отметить все галочки, связанные с зависимостями.
 
-## Generate a new site
+## Сгенерировать новый сайт
 
-Generate a new Docusaurus site using the **classic template**.
+Сгенерируйте новый сайт на Docusaurus, используя **классический шаблон**.
 
-The classic template will automatically be added to your project after you run the command:
+Классический шаблон автоматически добавится в ваш проект после выполнения команды:
 
 ```bash
 npm init docusaurus@latest my-website classic
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Эту команду можно выполнить в Command Prompt, PowerShell, Terminal или любом другом встроенном терминале вашего редактора кода.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Также команда установит все необходимые зависимости для запуска Docusaurus.
 
-## Start your site
+## Запустить сайт
 
-Run the development server:
+Запустите dev-сервер:
 
 ```bash
 cd my-website
 npm run start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Команда `cd` меняет текущую рабочую директорию. Чтобы работать с только что созданным сайтом Docusaurus, нужно перейти в соответствующую папку в терминале.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Команда `npm run start` собирает сайт локально и запускает dev-сервер, чтобы вы могли открыть его по адресу http://localhost:3000/.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Откройте `docs/intro.md` (эту страницу) и измените несколько строк: сайт **перезагрузится автоматически** и покажет ваши изменения.
