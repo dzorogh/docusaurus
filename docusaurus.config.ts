@@ -86,6 +86,10 @@ const config: Config = {
           label: 'Oryx BMS',
         },
         {
+          href: "https://projects.sharmax.tech/servicedesk/customer/portal/3",
+          label: 'Поддержка',
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
