@@ -1,5 +1,6 @@
 ---
 slug: /modul-pim/nastroiki/kategorii-tovarov
+sidebar_position: 1
 ---
 
 # Категории товаров
