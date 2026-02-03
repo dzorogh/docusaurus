@@ -1,0 +1,8 @@
+{
+    "label": "Таск-трекер",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "Описание таск-трекера корпоративного портала."
+    }
+}
