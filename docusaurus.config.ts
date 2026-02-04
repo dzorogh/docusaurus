@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -89,13 +89,14 @@ const config: Config = {
           href: "https://projects.sharmax.tech/servicedesk/customer/portal/3",
           label: 'Поддержка',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'Tutorial',
+        // },
+        // {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/docs/intro', label: 'Что нового', position: 'left' },
         {
           href: 'https://github.com/dzorogh/docusaurus',
           label: 'GitHub',
