@@ -93,7 +93,7 @@ const config: Config = {
         //   type: 'docSidebar',
         //   sidebarId: 'tutorialSidebar',
         //   position: 'left',
-        //   label: 'Tutorial',        ||   дфиудЖ эЕгещкшфдэб
+        //   label: 'Tutorial',
 
         // },
         // {to: '/blog', label: 'Blog', position: 'left'},
