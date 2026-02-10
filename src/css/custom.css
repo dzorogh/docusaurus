@@ -4,37 +4,47 @@
  * work well for content-centric websites.
  */
 
-/* Import Manrope font from local package */
-@import '@fontsource-variable/manrope';
+/* Geist webfont via Fontsource CDN */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/fontsource/fonts/geist@latest/latin-400-normal.woff2') format('woff2');
+}
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #647bef;
-  --ifm-color-primary-dark: #586edb;
-  --ifm-color-primary-darker: #4b5cb1;
-  --ifm-color-primary-darkest: #222c61;
-  --ifm-color-primary-light: #7e90eb;
-  --ifm-color-primary-lighter: #8f9feb;
-  --ifm-color-primary-lightest: #b0b9e7;
+  /* base brand color */
+  --ifm-color-primary: #76b943;
+  /* darker tones */
+  --ifm-color-primary-dark: #96d65a;
+  --ifm-color-primary-darker: #76b943;
+  --ifm-color-primary-darkest: #4d862a;
+  /* lighter tones */
+  --ifm-color-primary-light: #caf696;
+  --ifm-color-primary-lighter: #ddf9b9;
+  --ifm-color-primary-lightest: #f1fddf;
+
   --ifm-code-font-size: 95%;
+  /* --ifm-font-size-base: 14px; */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: 'Manrope Variable', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-base: 'Geist', system-ui, -apple-system, sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #647bef;
-  --ifm-color-primary-dark: #586edb;
-  --ifm-color-primary-darker: #4b5cb1;
-  --ifm-color-primary-darkest: #222c61;
-  --ifm-color-primary-light: #7e90eb;
-  --ifm-color-primary-lighter: #8f9feb;
-  --ifm-color-primary-lightest: #b0b9e7;
+  --ifm-color-primary: #b7f273;
+  --ifm-color-primary-dark: #96d65a;
+  --ifm-color-primary-darker: #76b943;
+  --ifm-color-primary-darkest: #4d862a;
+  --ifm-color-primary-light: #caf696;
+  --ifm-color-primary-lighter: #ddf9b9;
+  --ifm-color-primary-lightest: #f1fddf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-font-family-base: 'Manrope Variable', system-ui, -apple-system, sans-serif;
-}
+  --ifm-font-family-base: 'Geist', system-ui, -apple-system, sans-serif;
 
-/* Apply Manrope font globally */
-html {
-  font-family: 'Manrope Variable', system-ui, -apple-system, sans-serif;
+  --ifm-background-color: #0c0c0c;
+
+  --ifm-heading-color: #fff;
 }
