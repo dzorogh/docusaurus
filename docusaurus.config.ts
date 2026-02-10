@@ -97,11 +97,11 @@ const config: Config = {
         // },
         // {to: '/blog', label: 'Blog', position: 'left'},
         // { to: '/docs/intro', label: 'Что нового', position: 'left' },
-        {
-          href: 'https://github.com/dzorogh/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://github.com/dzorogh/docusaurus',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
         {
           type: 'localeDropdown',
           position: 'right',
