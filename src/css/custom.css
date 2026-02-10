@@ -27,7 +27,6 @@
   --ifm-color-primary-lightest: #f1fddf;
 
   --ifm-code-font-size: 95%;
-  /* --ifm-font-size-base: 14px; */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: 'Geist', system-ui, -apple-system, sans-serif;
 }
@@ -43,8 +42,6 @@
   --ifm-color-primary-lightest: #f1fddf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-font-family-base: 'Geist', system-ui, -apple-system, sans-serif;
-
   --ifm-background-color: #0c0c0c;
-
   --ifm-heading-color: #fff;
 }

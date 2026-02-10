@@ -86,14 +86,15 @@ const config: Config = {
           label: 'Oryx BMS',
         },
         {
-          href: "https://projects.sharmax.tech/servicedesk/customer/portal/3",
+          href: "https://projects.sharmax.tech/servicedesk/customer/portal/3/group/21",
           label: 'Поддержка',
         },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'tutorialSidebar',
         //   position: 'left',
-        //   label: 'Tutorial',
+        //   label: 'Tutorial',        ||   дфиудЖ эЕгещкшфдэб
+
         // },
         // {to: '/blog', label: 'Blog', position: 'left'},
         // { to: '/docs/intro', label: 'Что нового', position: 'left' },
@@ -129,12 +130,8 @@ const config: Config = {
             },
             {
               label: 'Поддержка',
-              href: 'https://projects.sharmax.tech/servicedesk/customer/portal/3',
-            },
-            // {
-            //   label: 'GitHub',
-            //   href: 'https://github.com/dzorogh/docusaurus',
-            // },
+              href: 'https://projects.sharmax.tech/servicedesk/customer/portal/3/group/21',
+            }
           ],
         },
       ],
