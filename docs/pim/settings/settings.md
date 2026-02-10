@@ -1,5 +1,5 @@
 ---
-slug: /modul-pim/nastroiki
+slug: /pim/settings
 ---
 
 # Настройки

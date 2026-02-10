@@ -1,5 +1,5 @@
 ---
-slug: /modul-pim/nastroiki/gruppy-atributov
+slug: /pim/settings/attribute-groups
 sidebar_position: 2
 ---
 

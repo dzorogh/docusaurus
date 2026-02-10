@@ -1,5 +1,5 @@
 ---
-slug: /modul-pim/nastroiki/kategorii-tovarov
+slug: /pim/settings/categories
 sidebar_position: 1
 ---
 
