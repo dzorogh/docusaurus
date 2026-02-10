@@ -112,7 +112,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Документация',
           items: [
             {
               label: 'Что нового',
@@ -121,33 +121,24 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Oryx BMS',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Сайт продукта',
+              href: 'https://oryxbms.ru',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Поддержка',
+              href: 'https://projects.sharmax.tech/servicedesk/customer/portal/3',
             },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/dzorogh/docusaurus',
-            },
+            // {
+            //   label: 'GitHub',
+            //   href: 'https://github.com/dzorogh/docusaurus',
+            // },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Oryx BMS.`,
     },
     prism: {
       theme: prismThemes.github,
