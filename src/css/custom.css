@@ -4,25 +4,18 @@
  * work well for content-centric websites.
  */
 
-/* Geist webfont via Fontsource CDN */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('https://cdn.jsdelivr.net/fontsource/fonts/geist@latest/latin-400-normal.woff2') format('woff2');
-}
+@import '@fontsource/manrope';
 
 /* You can override the default Infima variables here. */
 :root {
   /* base brand color */
   --ifm-color-primary: #647df0;
   /* darker tones */
-  --ifm-color-primary-dark: #3d4c6a;
-  --ifm-color-primary-darker: #76b943;
-  --ifm-color-primary-darkest: #4d862a;
+  --ifm-color-primary-dark: #5368DA;
+  --ifm-color-primary-darker: #4453C4;
+  --ifm-color-primary-darkest: #3d4c6a;
   /* lighter tones */
-  --ifm-color-primary-light: #637ced;
+  --ifm-color-primary-light: #3d4c6a;
   --ifm-color-primary-lighter: #778297;
   --ifm-color-primary-lightest: #F3F3F6;
 
@@ -30,12 +23,12 @@
 
   --ifm-code-font-size: 95%;
   --ifm-font-size-base: 14px;
-  --ifm-font-family-base: 'Geist', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-base: 'Manrope', system-ui, -apple-system, sans-serif;
 
   --ifm-global-radius: 0.8rem;
   --ifm-color-emphasis-300: #D7DAE0;
-  --ifm-menu-color-active: var(--ifm-color-primary-dark);
-  --ifm-color-content: var(--ifm-color-primary-dark);
+  --ifm-menu-color-active: var(--ifm-color-primary-darkest);
+  --ifm-color-content: var(--ifm-color-primary-darkest);
   --ifm-h1-font-size: xx-large;
   --ifm-h2-font-size: x-large;
   --ifm-h3-font-size: large;
@@ -45,7 +38,16 @@
   --ifm-code-padding-horizontal: .5rem;
   --ifm-toc-link-color: var(--ifm-color-primary-light);
   --ifm-breadcrumb-color-active: var(--ifm-menu-color-active);
-  --ifm-menu-link-sublist-icon: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.733 4.20703C7.87704 4.06997 8.06961 3.99572 8.26838 4.00059C8.46715 4.00547 8.65585 4.08907 8.793 4.23303L13.794 9.48303C13.927 9.62251 14.0011 9.80782 14.0011 10.0005C14.0011 10.1932 13.927 10.3785 13.794 10.518L8.794 15.768C8.72611 15.8394 8.64482 15.8967 8.55478 15.9367C8.46474 15.9766 8.36772 15.9985 8.26924 16.0009C8.17076 16.0034 8.07277 15.9864 7.98084 15.951C7.88892 15.9156 7.80487 15.8624 7.7335 15.7945C7.66213 15.7266 7.60483 15.6453 7.56487 15.5553C7.52491 15.4653 7.50307 15.3682 7.50061 15.2698C7.49815 15.1713 7.51511 15.0733 7.55052 14.9814C7.58594 14.8894 7.63911 14.8054 7.707 14.734L12.216 10L7.706 5.26603C7.56907 5.12185 7.495 4.92921 7.50006 4.73044C7.50512 4.53167 7.58891 4.34404 7.733 4.20703Z' fill='%23C2C2C2'/%3E%3C/svg%3E");
+  --ifm-menu-link-sublist-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 20 20'%3E%3Cg fill='none'%3E%3Cpath d='M4.207 12.267a.75.75 0 0 1 .026-1.06l5.25-5.002a.75.75 0 0 1 1.035 0l5.25 5.001a.75.75 0 0 1-1.034 1.086L10 7.784l-4.734 4.508a.75.75 0 0 1-1.06-.025z' fill='%23778297'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  --ifm-footer-padding-vertical: calc(var(--ifm-spacing-vertical) * 1);
+
+  --ifm-card-border-radius: var(--ifm-global-radius);
+
+  /* --ifm-container-width: 1140px; */
+  --ifm-container-width-xl: 1140px;
+
+  --ifm-alert-border-width: 1px;
+  --ifm-alert-border-left-width: 1px;
 }
 
 .markdown h1:first-child {
@@ -64,7 +66,7 @@ a.card {
 }
 
 a.card:hover {
-  border-color: var(--ifm-color-emphasis-300) !important;
+  border-color: var(--ifm-table-border-color) !important;
 }
 
 .card h2 {
@@ -79,35 +81,77 @@ a.card:hover {
   font-weight: var(--ifm-font-weight-bold) !important;
 }
 
-a.menu__link {
-  border-radius: 8px;
-}
-
 a.menu__link.menu__link--active {
   background-color: var(--ifm-color-primary-lightest);
-  color: var(--ifm-color-primary-dark);
+  color: var(--ifm-color-primary-darkest);
 }
+
+/* TOC */
 
 .table-of-contents__link:hover {
   text-decoration: underline;
-  color: var(--ifm-toc-link-color) !important;
+  /* color: var(--ifm-toc-link-color) !important; */
 }
 
 .table-of-contents__link--active {
-  font-weight: var(--ifm-font-weight-bold) !important;
+  /* font-weight: var(--ifm-font-weight-bold) !important; */
+}
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.01em;
+}
+
+th {
+  text-align: left;
+}
+
+.theme-admonition {
+  padding-left: 3.5rem;
+  position: relative;
+}
+
+[class^="admonitionHeading"] {
+  font-size: var(--ifm-h4-font-size);
+  margin-bottom: 1rem;
+}
+
+[class^="admonitionIcon"] {
+  font-size: .8rem !important;
+  position: absolute;
+  left: 1rem;
+}
+
+img {
+  border-radius: 8px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #647df0;
-  --ifm-color-primary-dark: #E2E2EA;
-  --ifm-color-primary-darker: #76b943;
-  --ifm-color-primary-darkest: #4d862a;
-  --ifm-color-primary-light: #637ced;
-  --ifm-color-primary-lighter: #e0e0e8;
-  --ifm-color-primary-lightest: #647df014;
+  --ifm-color-primary: #5484FF;
+  --ifm-color-primary-dark: cyan;
+  --ifm-color-primary-darker: magenta;
+  --ifm-color-primary-darkest: #E3EBFF;
+  --ifm-color-primary-light: #E3EBFF;
+  --ifm-color-primary-lighter: #E3EBFF;
+  --ifm-color-primary-lightest: #27272A;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-font-family-base: 'Geist', system-ui, -apple-system, sans-serif;
-  --ifm-background-color: #0c0c0c;
+  --ifm-background-color: #18181B;
   --ifm-heading-color: #fff;
+  --ifm-table-border-color: var(--ifm-color-emphasis-200);
+
+  --ifm-color-warning-contrast-background: #eab208ab;
+  --ifm-color-warning-dark: #EAB308;
+
+  --ifm-color-success-contrast-background: #41A34Bab;
+  --ifm-color-success-dark: #41A34B;
 }

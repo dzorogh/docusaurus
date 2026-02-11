@@ -110,31 +110,6 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Документация',
-          items: [
-            {
-              label: 'Что нового',
-              to: '/',
-            },
-          ],
-        },
-        {
-          title: 'Oryx BMS',
-          items: [
-            {
-              label: 'Сайт продукта',
-              href: 'https://oryxbms.ru',
-            },
-            {
-              label: 'Поддержка',
-              href: 'https://projects.sharmax.tech/servicedesk/customer/portal/3/group/21',
-            }
-          ],
-        },
-      ],
       copyright: `Copyright © ${new Date().getFullYear()} Oryx BMS.`,
     },
     prism: {
