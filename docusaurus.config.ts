@@ -77,7 +77,7 @@ const config: Config = {
     navbar: {
       title: 'Документация Oryx BMS',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Oryx BMS Logo',
         src: 'img/logo.svg',
       },
       items: [

@@ -16,30 +16,96 @@
 /* You can override the default Infima variables here. */
 :root {
   /* base brand color */
-  --ifm-color-primary: #76b943;
+  --ifm-color-primary: #647df0;
   /* darker tones */
-  --ifm-color-primary-dark: #96d65a;
+  --ifm-color-primary-dark: #3d4c6a;
   --ifm-color-primary-darker: #76b943;
   --ifm-color-primary-darkest: #4d862a;
   /* lighter tones */
-  --ifm-color-primary-light: #caf696;
-  --ifm-color-primary-lighter: #ddf9b9;
-  --ifm-color-primary-lightest: #f1fddf;
+  --ifm-color-primary-light: #637ced;
+  --ifm-color-primary-lighter: #778297;
+  --ifm-color-primary-lightest: #F3F3F6;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-size-base: 14px;
   --ifm-font-family-base: 'Geist', system-ui, -apple-system, sans-serif;
+
+  --ifm-global-radius: 0.8rem;
+  --ifm-color-emphasis-300: #D7DAE0;
+  --ifm-menu-color-active: var(--ifm-color-primary-dark);
+  --ifm-color-content: var(--ifm-color-primary-dark);
+  --ifm-h1-font-size: xx-large;
+  --ifm-h2-font-size: x-large;
+  --ifm-h3-font-size: large;
+  --ifm-global-shadow-lw: 0;
+  --ifm-card-background-color: var(--ifm-color-primary-lightest);
+  --ifm-table-head-background: var(--ifm-color-primary-lightest);
+  --ifm-code-padding-horizontal: .5rem;
+  --ifm-toc-link-color: var(--ifm-color-primary-light);
+  --ifm-breadcrumb-color-active: var(--ifm-menu-color-active);
+  --ifm-menu-link-sublist-icon: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.733 4.20703C7.87704 4.06997 8.06961 3.99572 8.26838 4.00059C8.46715 4.00547 8.65585 4.08907 8.793 4.23303L13.794 9.48303C13.927 9.62251 14.0011 9.80782 14.0011 10.0005C14.0011 10.1932 13.927 10.3785 13.794 10.518L8.794 15.768C8.72611 15.8394 8.64482 15.8967 8.55478 15.9367C8.46474 15.9766 8.36772 15.9985 8.26924 16.0009C8.17076 16.0034 8.07277 15.9864 7.98084 15.951C7.88892 15.9156 7.80487 15.8624 7.7335 15.7945C7.66213 15.7266 7.60483 15.6453 7.56487 15.5553C7.52491 15.4653 7.50307 15.3682 7.50061 15.2698C7.49815 15.1713 7.51511 15.0733 7.55052 14.9814C7.58594 14.8894 7.63911 14.8054 7.707 14.734L12.216 10L7.706 5.26603C7.56907 5.12185 7.495 4.92921 7.50006 4.73044C7.50512 4.53167 7.58891 4.34404 7.733 4.20703Z' fill='%23C2C2C2'/%3E%3C/svg%3E");
+}
+
+.markdown h1:first-child {
+  font-size: var(--ifm-h1-font-size) !important;
+}
+
+.menu__caret:before {
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+}
+
+a.card {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+a.card:hover {
+  border-color: var(--ifm-color-emphasis-300) !important;
+}
+
+.card h2 {
+  --ifm-heading-color: var(--ifm-color-content) !important;
+  font-size: var(--ifm-h3-font-size) !important;
+}
+
+.menu>ul>li>a,
+.menu>ul>li>div>a,
+.menu__link--sublist {
+  color: var(--ifm-color-primary-lighter);
+  font-weight: var(--ifm-font-weight-bold) !important;
+}
+
+a.menu__link {
+  border-radius: 8px;
+}
+
+a.menu__link.menu__link--active {
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-dark);
+}
+
+.table-of-contents__link:hover {
+  text-decoration: underline;
+  color: var(--ifm-toc-link-color) !important;
+}
+
+.table-of-contents__link--active {
+  font-weight: var(--ifm-font-weight-bold) !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #b7f273;
-  --ifm-color-primary-dark: #96d65a;
+  --ifm-color-primary: #647df0;
+  --ifm-color-primary-dark: #E2E2EA;
   --ifm-color-primary-darker: #76b943;
   --ifm-color-primary-darkest: #4d862a;
-  --ifm-color-primary-light: #caf696;
-  --ifm-color-primary-lighter: #ddf9b9;
-  --ifm-color-primary-lightest: #f1fddf;
+  --ifm-color-primary-light: #637ced;
+  --ifm-color-primary-lighter: #e0e0e8;
+  --ifm-color-primary-lightest: #647df014;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-font-family-base: 'Geist', system-ui, -apple-system, sans-serif;
   --ifm-background-color: #0c0c0c;
