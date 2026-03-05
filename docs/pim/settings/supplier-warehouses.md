@@ -1,5 +1,5 @@
 ---
-slug: /pim/settings/sklady-postavshikov
+slug: /pim/settings/supplier-warehouses
 sidebar_position: 3
 ---
 

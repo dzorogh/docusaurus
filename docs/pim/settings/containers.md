@@ -1,5 +1,5 @@
 ---
-slug: /pim/settings/konteinery
+slug: /pim/settings/containers
 sidebar_position: 5
 ---
 

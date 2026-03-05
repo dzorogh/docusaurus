@@ -1,5 +1,5 @@
 ---
-slug: /pim/settings/banki
+slug: /pim/settings/banks
 sidebar_position: 7
 ---
 

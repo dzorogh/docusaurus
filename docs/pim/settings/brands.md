@@ -1,5 +1,5 @@
 ---
-slug: /pim/settings/brendy
+slug: /pim/settings/brands
 sidebar_position: 6
 ---
 

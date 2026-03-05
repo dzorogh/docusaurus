@@ -1,5 +1,5 @@
 ---
-slug: /pim/settings/marshruty
+slug: /pim/settings/routes
 sidebar_position: 4
 ---
 
